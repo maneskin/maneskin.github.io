@@ -45,7 +45,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://cutt.ly/sb6Isvy" style="width:100%">
+    <img src="https://cutt.ly/vnthCd4" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Переможці Євробачення 2021</h3>
     </div>
@@ -57,11 +57,27 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://cutt.ly/vb6IRJO" style="width:100%">
+    <img src="https://cutt.ly/9nthAhK" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Фото з прес-конференції</h3>       
-    </div>
+      <h3>Фото з прес-конференції</h3>     
+       </div>
   </div>
+  <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
