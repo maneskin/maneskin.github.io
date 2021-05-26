@@ -353,6 +353,27 @@ function myFunction(id) {
       <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
     </div>
   </div>
+  <script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
     
     
     
@@ -361,7 +382,7 @@ function myFunction(id) {
     
     
     
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+<!--     <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
@@ -384,7 +405,7 @@ function myFunction(id) {
       </div>
     </div>
   </div>
-  
+   -->
 
 
 
